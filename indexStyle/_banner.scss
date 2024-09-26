@@ -1,0 +1,63 @@
+//*Banner Section Starts
+.banner_main {
+    width: 100%;
+    height: 500px;
+    .banner_inner {
+        width: 100%;
+        height: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../dist/img/banner.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .content_main {
+            width: 100%;
+            .heading_small_txt {
+                p {
+                    font-family: "Lora", serif;
+                    font-weight: 800;
+                    font-size: 22px;
+                    color: antiquewhite;
+                    text-shadow: 0 0 3px rgb(9, 12, 182);
+                }
+            }
+            .heading_big_txt {
+                p {
+                    font-family: "Lora", serif;
+                    font-weight: 900;
+                    font-size: 36px;
+                    color: antiquewhite;
+                    text-shadow: 2px 2px 6px rgba(194, 224, 191, 0.9);
+                }
+            }
+            .txt {
+                p {
+                    font-family: "Lora", serif;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: antiquewhite;
+                    span {
+                        font-size: 20px;
+                        color: #0a0236;
+                        text-shadow: 0 0 3px white;
+                    }
+                }
+            }
+            button {
+                width: 100px;
+                height: 50px;
+                background: linear-gradient(10deg, #e2c72e, #2a521d, #322547);
+                font-family: "Lora", serif;
+                font-weight: 600;
+                font-size: 20px;
+                color: white;
+                margin-top: 30px;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+            }    
+        }
+    }
+}
+//*Banner Section Ends
