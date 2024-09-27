@@ -1,0 +1,93 @@
+//*Footer Section Starts
+.footer_main {
+    width: 100%;
+    margin-top: 80px;
+    background: linear-gradient(to bottom, #29522c, #1d1a46, #a6b937 );
+    .footer_inner {
+        width: 90%;
+        margin: auto;
+        .motivational_txt {
+            .img_cus {
+                width: 20%;
+                img {
+                    width: 100%;
+                }
+            }
+            .big_txt {
+                margin-top: -20px;
+                p {
+                    font-family: "Lora", serif;
+                    font-weight: 800;
+                    font-size: 22px;
+                    color: antiquewhite;
+                    text-shadow: 0 0 3px rgb(9, 12, 182);
+                }
+            }
+            .small_txt {
+                p {
+                    width: 47%;
+                    font-family: "Lora", serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: antiquewhite;
+                    text-shadow: 0 0 3px rgb(19, 75, 5);
+                    span {
+                        font-size: 20px;
+                        color: #0a0236;
+                        text-shadow: 0 0 3px white;
+                    }
+                }
+            }
+        }
+        .footer_information {
+            width: 80%;
+            .social_link {
+                .link_txt {
+                    p {
+                        font-family: "Lora", serif;
+                        font-weight: 600;
+                        font-size: 22px;
+                        color: antiquewhite;
+                        text-shadow: 0 0 3px rgb(19, 75, 5);
+                    }
+                }
+                .link_cus {
+                    span {
+                        font-size: 20px;
+                        color: white;
+                    }
+                }
+            }
+            .others_info {
+                .link_txt {
+                    p {
+                        font-family: "Lora", serif;
+                        font-weight: 600;
+                        font-size: 22px;
+                        color: antiquewhite;
+                        text-shadow: 0 0 3px rgb(19, 75, 5);
+                    }
+                }
+                .link_cus {
+                    a {
+                        font-family: "Lora", serif;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: antiquewhite;
+                        text-shadow: 0 0 3px rgb(19, 75, 5);
+                    }
+                }
+            }
+        }
+    }
+    .copyright_txt {
+        p {
+            font-family: "Lora", serif;
+            font-weight: 500;
+            font-size: 18px;
+            color: antiquewhite;
+            text-shadow: 0 0 3px rgb(26, 5, 75);
+        }
+    }
+}
+//*Footer Section Ends
