@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css" integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -87,68 +93,36 @@
         </div>
     </section>
     <!--*Surah Banner Section Ends-->
-
-
-
-    <!--*Islamic Resources Section Starts-->
-    <section class="resources_main">
-        <div class="resources_inner">
+    <!--*Quran Recitation Section Starts-->
+    <section class="recitation_main">
+        <div class="recitation_inner">
             <div class="title_main flex flex-col justify-center items-center">
                 <div class="big_txt">
-                    <p>Islamic Resources</p>
+                    <p>Quran Recitation</p>
                 </div>
                 <div class="small_txt">
-                    <p>Explore new and unique ways to discuss and share Islamic knowledge.</p>
+                    <p>Discover a serene and spiritual journey through the Quran. Select any Surah to listen <br> to beautiful recitations and deepen your connection with the divine words of Allah.</p>
                 </div>
             </div>
             <div class="content_main">
-                <div class="content_inner flex flex-row gap-5">
-                    <div class="item_main">
-                        <div class="icon_cus"><i class="fa-solid fa-book-quran"></i></div>
-                        <div class="header_txt">
-                            <p>Quran Recitation</p>
+                <div class="content_inner flex flex-col justify-center items-center">
+                    <div class="input_section_main flex flex-row justify-center items-center">
+                        <div>
+                            <input id="inputForSurah" type="text">
                         </div>
-                        <div class="txt">
-                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
-                        </div>
-                        <button>More...</button>
+                        <button id="buttonForSurah">Search</button>
                     </div>
-                    <div class="item_main">
-                        <div class="icon_cus"><i class="fa-solid fa-mosque"></i></div>
-                        <div class="header_txt">
-                            <p>Namaz Time</p>
-                        </div>
-                        <div class="txt">
-                            <p>Accurate timings for the five daily prayers to stay connected with your faith.
-                            </p>
-                        </div>
-                        <button>More...</button>
-                    </div>
-                    <div class="item_main">
-                        <div class="icon_cus"><i class="fa-solid fa-hands-praying"></i></div>
-                        <div class="header_txt">
-                            <p>Daily Duah</p>
-                        </div>
-                        <div class="txt">
-                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
-                        </div>
-                        <button>More...</button>
-                    </div>
-                    <div class="item_main">
-                        <div class="icon_cus"><i class="fa-solid fa-star-and-crescent"></i></div>
-                        <div class="header_txt">
-                            <p>Islamic History</p>
-                        </div>
-                        <div class="txt">
-                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
-                        </div>
-                        <button>More...</button>
+                    <div id="outputBySurah" class="output_by_surah flex flex-col items-center gap-4">
+                        <p id="prevtxt">Your Search Appears Here.....</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--*Islamic Resources Section Ends-->
+    <!--*Quran Recitation Section Ends-->
+
+
+
     <!--*Footer Section Starts-->
     <section class="footer_main">
         <div class="footer_inner flex flex-row justify-between items-center">
