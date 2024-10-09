@@ -62,3 +62,37 @@
     }
 }
 //*Banner Section Ends
+//!Live Radio Starts
+.radio_main {
+    width: 30%;
+    .radio_inner {
+        width: 100%;
+        .for_icon {
+            color: red;
+            font-size: 12px;
+        }
+        .for_txt {
+            .radio_txt {
+                p {
+                    font-family: "Lora", serif;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+            .radio_icon {
+                .arrow {
+                    color: rgb(229, 255, 0);
+                }
+            }
+        }
+    }
+}
+.banner_main {
+    position: relative;
+}
+.radio_main {
+    position: absolute;
+    top: 30%;
+    right:-16%;
+}

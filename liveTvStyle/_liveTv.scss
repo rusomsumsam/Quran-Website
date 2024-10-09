@@ -1,0 +1,60 @@
+//*Live TV Section Starts
+.live_tv_main {
+    width: 100%;
+    .live_tv_inner {
+        width: 100%;
+        .title_main {
+            width: 100%;
+            margin-bottom: 50px;
+            .big_txt {
+                p {
+                    font-family: "Lora", serif;
+                    font-weight: 800;
+                    font-size: 40px;
+                    color: rgb(1, 1, 29);
+                    text-transform: uppercase;
+                    text-shadow: 0 0 2px rgb(8, 59, 3);
+                }
+            }
+            .small_txt {
+                p {
+                    font-family: "Lora", serif;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: rgb(1, 1, 29);
+                    text-align: center;
+                }
+            }
+        }
+        .content_main {
+            width: 100%;
+            .makkah_tv, .peace_tv {
+                .makkah_btn {
+                    width: 20%;
+                    height: 140px;
+                    background: linear-gradient(to bottom, #a6b937, #29522c, #1d1a46);
+                    .main {
+                        width: 100%;
+                        .for_img {
+                            width: 50%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .for_title {
+                            width: 50%;
+                            p {
+                                width: 100%;
+                                font-family: "Lora", serif;
+                                font-weight: 600;
+                                font-size: 20px;
+                                color: rgb(5, 1, 27);
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="dist/index.css">
+    <link rel="stylesheet" href="dist/liveTv.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css" integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/v5-font-face.min.css" integrity="sha512-DcECXqwZmt1qB8pmbplND75YoND3xBL1h4/LGQ+0zoizkoAKI+BniMoEF/JsZ/vcnsr9X5NOGaB63jLmOxgJrA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
 <body>
     <!--*Navbar Section Starts-->
@@ -26,7 +33,7 @@
                     <details class="dropdown">
                         <summary class="btn m-1">Quran <span><i class="fa-solid fa-chevron-down"></i></span></summary>
                         <ul class="menu dropdown-content rounded-box z-[1] p-2 shadow">
-                            <li><a href="surah.html">Surah</a></li>
+                            <li><a>Surah</a></li>
                             <li><a>Juz</a></li>
                         </ul>
                     </details>
@@ -82,7 +89,7 @@
         </div>
     </section>
     <!--*Navbar Section Ends-->
-    <!--*Banner Section Starts-->
+    <!--*Live TV Banner Section Starts-->
     <section class="banner_main">
         <div class="banner_inner flex flex-row">
             <div class="content_main flex flex-col justify-center items-center">
@@ -90,95 +97,72 @@
                     <p>The Light Of Truth</p>
                 </div>
                 <div class="heading_big_txt text-center">
-                    <p>LEARN, DISCUSS & <br>SHARE ISLAMIC KNOWLEDGE</p>
+                    <p>TV</p>
                 </div>
-                <div class="txt text-center">
-                    <p><span>" The Light Of Truth "</span> is a social network focused around <br> various islamic content, including tafsir, hadith, and Muslim history.</p>
-                </div>               
-                <button>Launch</button>
             </div>
         </div>
     </section>
-    <!--*Banner Section Ends-->
-    <!--!Radio Section Starts-->
-    <div class="radio_main">
-        <div class="radio_inner flex flex-row gap-2">
-            <div class="for_icon flex justify-center items-center">
-                <i class="fa-solid fa-circle"></i>
-            </div>
-            <div class="for_txt flex flex-row gap-1 justify-center items-center">
-                <div class="radio_txt">
-                    <p>Live Radio</p>
-                </div>
-                <div class="radio_icon">
-                    <span class="arrow"><i class="fa-solid fa-angles-left"></i></span>
-                    <button id="radioPlayBtn"><span style="color:red"><i class="fa-solid fa-play"></i></span></button>
-                    <span class="arrow"><i class="fa-solid fa-angles-right"></i></span>
-                </div>
-                <div id="radioOutput"></div>
-            </div>
-        </div>
-    </div>
-    <!--!Radio Section Ends-->
-    <!--*Islamic Resources Section Starts-->
-    <section class="resources_main">
-        <div class="resources_inner">
+    <!--*Live TV Banner Section Ends-->
+    <!--*Live TV Section Starts-->
+    <section class="live_tv_main">
+        <div class="live_tv_inner">
             <div class="title_main flex flex-col justify-center items-center">
                 <div class="big_txt">
-                    <p>Islamic Resources</p>
+                    <p>LIVE TV</p>
                 </div>
                 <div class="small_txt">
-                    <p>Explore new and unique ways to discuss and share Islamic knowledge.</p>
+                    <p>Stay connected and entertained with LIVE TV. Watch real-time broadcasts across various<br> channels, from news to entertainment, and enjoy a seamless viewing experience.</p>
                 </div>
             </div>
             <div class="content_main">
-                <div class="content_inner flex flex-row gap-5">
-                    <div class="item_main">
-                        <div class="icon_cus"><i class="fa-solid fa-book-quran"></i></div>
-                        <div class="header_txt">
-                            <p>Quran Recitation</p>
+                <div class="makkah_tv">
+                    <button id="makkahBtn" class="btn makkah_btn" onclick="my_modal_3.showModal()">
+                        <div class="main flex">
+                            <div class="for_img">
+                                <img src="dist/img/makkah.webp" alt="makkah">
+                            </div>
+                            <div class="for_title flex justify-center items-center">
+                                <p>Makkah TV</p>
+                            </div>
                         </div>
-                        <div class="txt">
-                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
+                    </button>
+                    <dialog id="my_modal_3" class="modal">
+                        <div class="modal-box">
+                            <form method="dialog">
+                                <button id="videoClose" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <div class="for_video">
+                                <video id="videoPlayer" controls></video>
+                            </div>
                         </div>
-                        <button>More...</button>
-                    </div>
-                    <div class="item_main">
-                        <div class="icon_cus"><i class="fa-solid fa-mosque"></i></div>
-                        <div class="header_txt">
-                            <p>Namaz Time</p>
+                    </dialog>
+                </div>
+                <div class="peace_tv">
+                    <button id="peacehBtn" class="btn makkah_btn" onclick="my_modal_4.showModal()">
+                        <div class="main flex">
+                            <div class="for_img">
+                                <img src="dist/img/peacetv.webp" alt="makkah">
+                            </div>
+                            <div class="for_title flex justify-center items-center">
+                                <p>Peace TV</p>
+                            </div>
                         </div>
-                        <div class="txt">
-                            <p>Accurate timings for the five daily prayers to stay connected with your faith.
-                            </p>
+                    </button>
+                    <dialog id="my_modal_4" class="modal">
+                        <div class="modal-box">
+                            <form method="dialog">
+                                <button id="videoClosePeace" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <div class="for_video">
+                                <video id="videoPlayerPeace" controls></video>
+                            </div>
                         </div>
-                        <button>More...</button>
-                    </div>
-                    <div class="item_main">
-                        <div class="icon_cus"><i class="fa-solid fa-hands-praying"></i></div>
-                        <div class="header_txt">
-                            <p>Daily Duah</p>
-                        </div>
-                        <div class="txt">
-                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
-                        </div>
-                        <button>More...</button>
-                    </div>
-                    <div class="item_main">
-                        <div class="icon_cus"><i class="fa-solid fa-star-and-crescent"></i></div>
-                        <div class="header_txt">
-                            <p>Islamic History</p>
-                        </div>
-                        <div class="txt">
-                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
-                        </div>
-                        <button>More...</button>
-                    </div>
+                    </dialog>
                 </div>
             </div>
         </div>
     </section>
-    <!--*Islamic Resources Section Ends-->
+    <!--*Live TV Section Ends-->
     <!--*Footer Section Starts-->
     <section class="footer_main">
         <div class="footer_inner flex flex-row justify-between items-center">
